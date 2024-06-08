@@ -1,0 +1,114 @@
+:root {
+    --primaryColor: #538392;
+    --secondaryColor: #EE4E4E;
+    --whiteColor: #fff;
+    --blackColor: #222;
+    --darkGreyColor: #a7a7a7;
+    --greyColor: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F9F9E0;
+    padding: 2rem;
+}
+
+.main {
+    width: 60%;
+    min-width: 300px;
+    background-color: var(--whiteColor);
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+}
+
+.settings-header {
+    margin-bottom: 2rem;
+}
+
+.settings-title {
+    font-size: 2rem;
+    color: var(--primaryColor);
+    text-align: center;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.settings-section {
+    padding: 1.5rem;
+    background-color: var(--greyColor);
+    border-radius: 8px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+    margin-bottom: 1rem;
+}
+
+.settings-option {
+    padding: 1rem;
+    background-color: var(--whiteColor);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings-option:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
+}
+
+.option-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.option-description {
+    font-size: 1rem;
+    color: var(--darkGreyColor);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #538392;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #80B9AD;
+    transform: scale(1.05);
+}
+
+.back-button a ion-icon {
+    margin-right: 5px;
+}
